@@ -29,7 +29,7 @@ var server = http.createServer(app);
 server.listen(process.env.PORT || 8080, function onListen() {
   var address = 'https://hse5z4vq6bklsnvm1rcq1x304.js.wpenginepowered.com';
   console.log('Listening on: %j', address);
-  console.log('Port', express_new.address().port);
+  console.log('Port', address.port);
  });
 server.on('error', onError);
 server.on('listening', onListening);
