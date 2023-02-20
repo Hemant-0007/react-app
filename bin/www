@@ -28,8 +28,10 @@ var server = http.createServer(app);
 // server.listen();
 server.listen(process.env.PORT || 3306, function onListen() {
   var address = server.address();
+  var app_ = require('express');
+
   console.log('Listening on: %j', address);
-  console.log('Port', app.address().port);
+  console.log('Port', app_.address().port);
  });
 server.on('error', onError);
 server.on('listening', onListening);
