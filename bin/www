@@ -26,7 +26,7 @@ var server = http.createServer(app);
  */
 
 // server.listen();
-server.listen(process.env.PORT || 8080, function onListen() {
+server.listen(process.env.PORT || 3306, function onListen() {
   var address = server.address();
   console.log('Listening on: %j', address);
   console.log(' -> that probably means: http://localhost:%d', address.port);
