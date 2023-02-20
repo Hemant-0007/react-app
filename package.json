@@ -8,8 +8,8 @@
   "private": true,
   "keywords": [],
   "scripts": {
-    "start": "node ./bin/www",
-    "build": "node ./bin/www"
+    "start": "npm start",
+    "build": "npm build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
